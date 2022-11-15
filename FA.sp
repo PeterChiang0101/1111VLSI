@@ -22,12 +22,17 @@ Vc0 c0 Vss pulse(0v Von 0.1n 0.1n 0.5n 1.2n)
 
 .op
 .tran 50p 100n
-.probe V(S0) V(S1) V(S2) V(Cout)
+.probe V(S0) V(S1) V(S2) V(Cout) V(c0) V(c1)
 
 XFA0 x0 y0 c0 S0 c1
 XFA1 x1 y1 c1 S1 c2
 XFA2 x2 y2 c2 S2 Cout
-
+C1 c1 Vss 1f
+C2 c2 Vss 1f
+C3 Cout Vss 1f
+C4 S0 Vss 1f
+C5 S1 Vss 1f
+C6 S2 Vss 1f
 
 .subckt INV In Out
 Mp1 Out In Vdd Vdd p_18 w=2u l=0.18u
