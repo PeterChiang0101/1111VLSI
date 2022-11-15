@@ -1,7 +1,7 @@
 .FullAdder
 
 .protect
-.lib '/cad/cic018.l' tt
+.lib '/cad/cell_lib/cic018.l' tt
 .endl '/cad/cic018.l'
 
 .unprotect
